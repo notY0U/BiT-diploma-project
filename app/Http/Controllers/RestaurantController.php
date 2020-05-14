@@ -124,7 +124,7 @@ class RestaurantController extends Controller
         // dd($request->menu_id);
         if($request->menu_id ==0){
             return redirect()->
-            back('restaurant.index')->
+            back('restaurant.create')->
             with('info_message','Must have dish of the day');
         }
         $restaurant->save();
